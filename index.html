@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Chandrayaan 3</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="script.js"></script>
 <body>
-    
+    <video id='back' preload="auto" loop muted autoplay>
+        <source src="nebula.mp4" type="video/mp4">
+    </video>
+    <div class="main">
+        <div class="navbar">
+            <a href="#">Hello</a>
+            <a href="#">Hello</a>
+            <a href="#">Hello</a>
+            <a href="#">Hello</a>
+        </div>
+        <div class="head">
+            Chandrayaan 3
+        </div>
+        <div class="title">
+            <span id='o'>India's</span> mission to <span id='g'>moon</span>
+        </div>
+        <div class="moon">
+            <img src="moonfg.gif" alt="moon">
+        </div>
+        <div class="heading">
+            India's Fatboy
+        </div>
+        <div class="content">
+            <div class="text">
+                Chandrayaan-3 is the third installment in India's lunar exploration program, marked a historic achievement with its successful launch on July 14, 2023. Developed by the Indian Space Research Organisation (ISRO), the mission included a lunar lander named Vikram and a rover named Pragyan, making India the fourth country to achieve a successful Moon landing, specifically on the lunar south pole<br><br>
+                The mission was fuelled and powered by the LVM3-M4 or FatBoy , India's largest liquid fuel cryogenic engine.The LVM3 M4, also known as GSLV Mk III, played a crucial role in launching Chandrayaan-3 into its lunar trajectory. This powerful and versatile rocket, developed by ISRO, features a robust cryogenic upper stage (C25) that propelled the spacecraft beyond Earth's orbit. The precision of the LVM3 M4 ensured the successful deployment of Chandrayaan-3, showcasing India's prowess in developing advanced launch vehicles for ambitious space exploration missions.
+            </div>
+        </div>
+        <div class="view" onmouseover="showInnerImage()" onmouseout="reset()">
+            <img src="outer2.png" class="layer" id="out">
+            <img src="inner1.png" class="layer" id="in">
+        </div>
+    </div>
 </body>
 </html>
