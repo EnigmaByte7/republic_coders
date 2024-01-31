@@ -195,3 +195,9 @@ video{
 .text #name{
     text-align:right;
 }
+.grid{
+    display: grid;
+    width:80%;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto;
+}
