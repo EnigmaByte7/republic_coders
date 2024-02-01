@@ -235,3 +235,35 @@ video{
     justify-content: space-evenly;
     object-fit: contain;
 }
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .moon-container {
+    width: 200px; /* Adjust the size of the moon container as needed */
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+  }
+  
+  .moon {
+    width: 100%;
+    height: auto;
+  }
+  
+  .chandrayaan3 {
+    width: 50px; /* Adjust the size of the Chandrayaan-3 image as needed */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 10s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
