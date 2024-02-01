@@ -281,3 +281,6 @@ video{
     height:500px;
     align-self: center;
   }
+.img-container video{
+    z-index:1;
+}
