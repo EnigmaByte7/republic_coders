@@ -196,10 +196,11 @@ video{
     text-align:right;
 }
 .grid {
+    margin-top:50px;
     display: grid;
     width: 80%;
     grid-template-columns: 300px auto;
-    grid-template-rows: auto;
+    grid-template-rows: 500px;
 }
 
 .video-container {
@@ -211,9 +212,13 @@ video{
 #grid-video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
     top: 0;
     left: 0;
+
     z-index: 1;
+}
+.video-container video{
+    border-radius: 30px;
 }
