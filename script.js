@@ -23,3 +23,27 @@ function reset(){
     var five = document.getElementById('5').innerHTML='Lift Off Mass : 640 tonnes';
     var six = document.getElementById('6').innerHTML='Largest Cryogenic Engine';
 }
+
+const videos = document.querySelectorAll('video');
+
+const options = {
+  root: null, // use the viewport as the root
+  rootMargin: '0px',
+  threshold: 0.7 // trigger when 50% of the video is visible
+};
+
+const handleIntersection = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.play();
+    } else {
+      entry.target.pause();
+    }
+  });
+};
+
+const observer = new IntersectionObserver(handleIntersection, options);
+
+videos.forEach(video => {
+  observer.observe(video);
+});

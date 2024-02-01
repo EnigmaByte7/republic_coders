@@ -197,11 +197,12 @@ video{
 }
 .grid {
     margin-top:50px;
+    row-gap: 50px;
     align-items: center;
     display: grid;
     width: 80%;
     grid-template-columns: 300px auto;
-    grid-template-rows: 500px;
+    grid-template-rows: 500px 500px 500px 500px 500px;
 }
 
 .video-container {
