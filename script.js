@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.7 // trigger when 70% of the video is visible
+    threshold: 0.7 
   };
 
   const handleIntersection = (entries, observer) => {

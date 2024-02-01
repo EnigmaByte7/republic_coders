@@ -236,34 +236,48 @@ video{
     object-fit: contain;
 }
 
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
+@keyframes orbit {
+    100%{
+        transform: rotate(360deg);
     }
   }
   
   .moon-container {
-    width: 200px; /* Adjust the size of the moon container as needed */
-    height: 200px;
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-template-rows: 700px;
+    width:100%;
+    margin-top: 100px;
+    justify-content:center;
+  }
+  
+  .moon2 {
+    margin-left: -300px;
+    width: auto;
+    height: 100%;
+    animation: orbit 10s linear infinite;
+ 
+  }
+  
+  .lander {
     position: relative;
-    margin: 50px auto;
-  }
-  
-  .moon {
-    width: 100%;
-    height: auto;
-  }
-  
-  .chandrayaan3 {
-    width: 50px; /* Adjust the size of the Chandrayaan-3 image as needed */
+    margin-top:-400px;
+    width: 100px; 
     height: auto;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: rotate 10s linear infinite; /* Adjust the animation duration as needed */
+    animation: revolve 10s linear infinite;
+    z-index: 1;
   }
-  
+  @keyframes revolve{
+    from {
+        transform: rotate(0deg) translateX(450px) rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg) translateX(450px) rotate(-360deg);
+      }
+  }
+  .anim{
+    z-index:0;
+    height:500px;
+    align-self: center;
+  }
