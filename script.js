@@ -24,26 +24,27 @@ function reset(){
     var six = document.getElementById('6').innerHTML='Largest Cryogenic Engine';
 }
 
-const videos = document.querySelectorAll('video');
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.querySelectorAll('.grid-video');
 
-const options = {
-  root: null, // use the viewport as the root
-  rootMargin: '0px',
-  threshold: 0.7 // trigger when 50% of the video is visible
-};
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.7 // trigger when 70% of the video is visible
+  };
 
-const handleIntersection = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.play();
-    } else {
-      entry.target.pause();
-    }
+  const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.play();
+      } else {
+        entry.target.pause();
+      }
+    });
+  };
+
+  videos.forEach(video => {
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(video);
   });
-};
-
-const observer = new IntersectionObserver(handleIntersection, options);
-
-videos.forEach(video => {
-  observer.observe(video);
 });
