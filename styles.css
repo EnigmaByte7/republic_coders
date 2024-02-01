@@ -197,6 +197,7 @@ video{
 }
 .grid {
     margin-top:50px;
+    align-items: center;
     display: grid;
     width: 80%;
     grid-template-columns: 300px auto;
@@ -207,14 +208,29 @@ video{
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 #grid-video {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+}
+.grid .text{
+    font-size:20px;
+    color:yellow
+}
+.grid .content{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:60%;
+    justify-content: space-evenly;
+    object-fit: contain;
 }
