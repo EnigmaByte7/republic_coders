@@ -216,9 +216,5 @@ video{
     position: absolute;
     top: 0;
     left: 0;
-
     z-index: 1;
-}
-.video-container video{
-    border-radius: 30px;
 }
