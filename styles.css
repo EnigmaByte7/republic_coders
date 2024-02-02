@@ -293,10 +293,14 @@ video{
     text-shadow: 7px 4px 5px rgba(248, 143, 44, 0.842);
 }
 .carousel{
+    margin-top: 50px;
+    row-gap:40px;
+    column-gap:20px;
     display: grid;
     width:80%;
-    grid-template-columns: 200px 400px;
+    grid-template-columns: 200px auto;
     grid-template-rows: 200px;
+    align-items: center;
 }
 .media{
     border-radius: 30px;
@@ -309,3 +313,23 @@ video{
     height:100%;
     object-fit: contain;
 }
+.caption{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    width:100%;
+    padding-left:20px;
+    margin:0;
+}
+.shead{
+    font-size: 24px;
+    color:rgb(241, 113, 28);
+    font-family: Merienda;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom:10px;
+}
+.new{
+    font-size:20px;
+}
+
