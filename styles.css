@@ -349,9 +349,9 @@ video{
 .card{
     margin-top: 50px;
     display:flex;
-    flex-direction: row;
-    width:200px;
-    height:500px;
+    flex-direction: column;
+    width:400px;
+    height:700px;
     backdrop-filter: blur(20px);
     border-radius: 30px;
     align-items: center;
@@ -364,9 +364,10 @@ video{
     text-align: center;
 }
 .details{
+    height: 100%;
+    width:100%;
     font-family: Poppins;
     font-size: 23px;
-    line-height: 1px;
     color: white;
     text-align: justify;
     padding:5px;
