@@ -332,4 +332,42 @@ video{
 .new{
     font-size:20px;
 }
+.vbox{
+    width:50%;
+    margin-top:40px;
+    position:relative;
+    height:400px;
+    z-index:1;
+    border-radius: 30px;
+    box-shadow: 5px 7px 9px rgba(255, 126, 5, 0.842);
+    background-color: yellowgreen;
+}
+.vbox video{
+    object-fit: cover;
+}
 
+.card{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: row;
+    width:200px;
+    height:500px;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 5px 7px 9px rgba(255, 255, 255, 0.842);
+}
+.name{
+    font-family: Montserrat;
+    font-size:18px;
+    color: orangered;
+    text-align: center;
+}
+.details{
+    font-family: Poppins;
+    font-size: 23px;
+    line-height: 1px;
+    color: white;
+    text-align: justify;
+    padding:5px;
+}
