@@ -25,7 +25,6 @@ function reset(){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const videos = document.querySelectorAll('.grid-video');
 
   const options = {
     root: null,
@@ -33,12 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
     threshold: 0.7 
   };
 
+});
+const videos = document.querySelectorAll('.grid-video');
+
   const handleIntersection = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.play();
       } else {
-        entry.target.pause();
+        entry.target.pause(); 
       }
     });
   };
@@ -47,4 +49,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver(handleIntersection, options);
     observer.observe(video);
   });
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const roverAnim = document.getElementById("roverAnim");
+    const rover = document.getElementById("rover");
+    const thanks = document.querySelector(".thanks");
+
+    const observer2 = new IntersectionObserver(onIntersection, { threshold: 0.8 });
+    observer2.observe(rover);
+
+    function onIntersection(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add a class to the "Thanks" element to trigger its animation
+                thanks.classList.add("show-thanks");
+            } else {
+                // Remove the class when the rover is not intersecting
+                thanks.classList.remove("show-thanks");
+            }
+        });
+    }
 });
