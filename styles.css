@@ -340,10 +340,14 @@ video{
     z-index:1;
     border-radius: 30px;
     box-shadow: 5px 7px 9px rgba(255, 126, 5, 0.842);
-    background-color: yellowgreen;
 }
 .vbox video{
     object-fit: cover;
+}
+
+.end{
+    width:100%;
+    box-shadow:none;
 }
 
 .card{
@@ -388,6 +392,14 @@ video{
     height:100%;
     object-fit: cover;
 }
+.animation{
+    width:400px;
+    height:300px;
+    position:relative;
+    align-self:end;
+    margin-top:100px;
+    margin-right:20px;
 
+}
 
 
