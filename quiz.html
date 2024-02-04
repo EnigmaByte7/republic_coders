@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="quiz_styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    
+</head>
+<script src="quiz_logic.js"></script>
+<body>
+    <div class="confetti-container" id="confetti"></div>
+    <div class="end" id="end">
+        <div class="heading">Congratulations 🎉 !!!</div>
+        <div class="sub-heading">You have got <span id='score'></span> out of 10 questions correct !</div>
+        <div class="sub-heading">Share your score !</div>
+        <div  onclick="share()" id="share">
+        <img src="what.png"></div>
+    </div>
+    <div class="container" id="main">
+        <div class="que" id="span">
+            <div class="question" id="q"></div>
+        </div>
+        <div class="options" id="a" onclick="clicked('a')">
+            <div class="mark" >
+                <p>A</p>
+            </div>
+            <div class="text">
+                
+            </div>
+        </div>
+        <div class="options" id="b" onclick="clicked('b')">
+            <div class="mark">
+                <p>B</p>
+            </div>
+            <div class="text"></div>
+        </div>
+        <div class="options" id="c" onclick="clicked('c')">
+            <div class="mark"><p>C</p></div>
+            <div class="text"></div>
+        </div>
+        <div class="options" id="d" onclick="clicked('d')">
+            <div class="mark"><p>D</p></div>
+            <div class="text"></div>
+        </div>
+    </div>
+    <div id="message"></div>
+</body>
+</html>
