@@ -1,0 +1,50 @@
+.html{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.main{
+    position:relative;
+    top: 0;
+    left: 0;
+    margin:0px;
+    padding:0px;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+video{
+    position: fixed;
+    object-fit: cover; 
+    z-index: -1; 
+    height:100%;
+    width:100%;
+}
+.heading{
+    font-family:Honk;
+    margin-top:50px;
+    font-size:100px;
+    font-weight:200;
+    color: white;
+    text-shadow: 7px 4px 5px rgba(248, 44, 44, 0.842);
+}
+.content{
+    margin-top: 40px;
+    width:90%;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 2px 2px .5px rgba(255, 255, 255, 0.842);
+    height:auto;
+    padding:20px;
+    text-wrap: wrap;
+}
+.text{
+    font-size:25px;
+    color:white;
+    letter-spacing: 1px;
+    font-family: Protest Riot;
+    text-align: justify;
+}
