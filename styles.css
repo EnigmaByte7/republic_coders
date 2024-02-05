@@ -60,8 +60,7 @@ video{
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
 }
 .moon{
@@ -612,5 +611,114 @@ a:visited{
     }
     100% {
         text-shadow: 7px 5px 5px rgba(40, 40, 239, 1); 
+    }
+}
+
+@media screen  and (max-width: 768px){
+    .head{
+        font-size:2em;
+        margin-top:140px;
+    }
+    .title{
+        font-size:3em;
+        margin:20px;
+        text-align: center;
+    }
+    .moon img{
+        margin-left:0;
+        width:-webkit-fill-available;
+        height:auto;
+    }
+    .heading{
+        font-size:3em;
+        margin-top:45px;
+    }
+    .text{
+        font-size:1.2em;
+        letter-spacing:0.5px;
+    }
+    .layer{
+        margin-left:-77px;
+        height:500px;
+        width:auto;
+    }
+    .text l{
+        font-size:1em;
+    }
+    #wm img{
+        width:80%;
+        margin-left:10%;
+    }
+    .img-container{
+        flex-direction:column;
+        width:100%;
+    }
+    .img-container img{
+        width:80%;
+        align-self:center;
+        margin-top: 20px;
+    }
+    .grid{
+        width:100%;
+        justify-content:center;
+        grid-template-columns:90%;
+        grid-template-rows: 200px 500px 200px 500px 200px 500px 200px 500px 200px 500px;
+    }
+    .grid .content{
+        margin-left:15px;
+    }
+    .grid .text{
+        font-size:.8em;
+    }
+    .moon-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 700px auto auto;
+    }
+    .moon2{
+        margin-left: -150px;
+        height:56%;
+    }
+    .lander{
+        width:80px;
+        margin-top:-250px;
+        margin-left: -90px;
+    }
+    .anim{
+        height:auto;
+        margin-top:0px;
+    }
+    .sub-heading{
+        font-size:3em;
+        text-align: center;
+    }
+    .carousel{
+        grid-template-columns: 100%;
+    }
+    .new{
+        font-size:1em;
+    }
+    .shead{
+        font-size:1.3em;
+        text-align:center;
+    }
+    .vbox{
+        width:90%;
+    }
+    .marquee{
+        height:auto;
+    }
+    .card{
+        width:300px;
+        height:auto;
+    }
+    .img-section{
+        width:90%;
+        height:350px;
+        padding:10px;
+    }
+    .details{
+        font-size:1em;
+        padding:10px
+        height:350px;
     }
 }
