@@ -710,6 +710,7 @@ a:visited{
     .anim{
         height:auto;
         margin-top:0px;
+        margin-left: 15px;
     }
     .sub-heading{
         font-size:3em;

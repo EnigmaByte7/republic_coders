@@ -61,7 +61,7 @@ const videos = document.querySelectorAll('.grid-video');
 
     setTimeout(function(){
       document.getElementById('load').style.visibility = 'hidden';},
-      1000
+      4000
     );
 
     function onIntersection(entries) {
