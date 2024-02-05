@@ -718,7 +718,36 @@ a:visited{
     }
     .details{
         font-size:1em;
-        padding:10px
+        padding:10px;
         height:350px;
     }
+    .rover-anim{
+        margin-top:150px;
+    }
+    .rover-img{
+        width:200px;
+        height:200px;
+    }
+    .thanks{
+        margin-left:-30px;
+    }
+    .last-heading{
+        font-size:3.3em;
+        padding:5px;
+    }
+    .last
+    {font-size:1.8em;}
+    .contacts{
+        width:90%;
+    }
+    .contact img{
+        width:50px;
+        height:50px;
+    }
+    .footer a{
+        padding:0;
+        padding-top:10px;
+        font-size:0.9em;
+    }
+
 }
