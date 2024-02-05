@@ -80,7 +80,8 @@ video{
 .head{
     font-family: Orbitron;
     font-weight: 200;
-    text-shadow: 7px 5px 4px rgb(66 0 243);
+    animation: shadow2 5s ease infinite alternate;
+    text-shadow: 7px 5px 5px rgba(40, 40, 239, 1);
     color: white;
     font-size: 100px;
     margin-top:200px;
@@ -111,7 +112,8 @@ video{
     font-size:100px;
     font-weight:200;
     color: white;
-    text-shadow: 7px 4px 5px rgba(248, 44, 44, 0.842);
+    text-shadow: 7px 5px 5px rgba(40, 40, 239, 1);
+    animation: shadow2 5s ease infinite alternate;
 }
 .content{
     margin-top: 50px;
@@ -500,6 +502,7 @@ a:visited{
     grid-template-columns: auto auto auto auto;
     grid-template-rows:100px 50px 50px;
     box-shadow:-20px -12px 20px 1px #2838ef;
+    animation: shadow1 10s ease infinite alternate;
 }
 .footer a, .footer a:hover, .footer a:visited{
     color:white;
@@ -518,7 +521,9 @@ a:visited{
 #span{
     grid-column: 1/ span 4;
 }
-
+.noval img{
+    box-shadow: none;
+}
 @keyframes rover {
     0% {
         transform: translateX(100vw);
@@ -587,3 +592,25 @@ a:visited{
     }
 }
 
+@keyframes shadow1 {
+    0% {
+        box-shadow: -20px -12px 20px 1px rgba(239, 40, 40, 1); 
+    }
+    50% {
+        box-shadow: -20px -12px 20px 1px rgba(40, 239, 40, 1); 
+    }
+    100% {
+        box-shadow: -20px -12px 20px 1px rgba(40, 40, 239, 1); 
+    }
+}
+@keyframes shadow2 {
+    0% {
+        text-shadow: 7px 5px 5px rgba(239, 40, 40, 1); 
+    }
+    50% {
+        text-shadow: 7px 5px 5px rgba(40, 239, 40, 1); 
+    }
+    100% {
+        text-shadow: 7px 5px 5px rgba(40, 40, 239, 1); 
+    }
+}
