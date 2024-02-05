@@ -17,7 +17,7 @@ html, body{
     left:0;
     z-index:999;
     position: fixed;
-    visibility: visible;
+    visibility: hidden;
 }
     
 .container{
