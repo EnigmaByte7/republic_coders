@@ -6,8 +6,11 @@
     box-sizing:border-box;
     margin:0;
     padding:0;
+
 }
 body{
+    overflow-x: hidden;
+    margin:0;
     width:100vw;
     height:100vh;
     background-color: #e0e0e0;
@@ -143,4 +146,40 @@ body{
     font-family: Poppins;
     font-size: 23px;
     font-weight: 100;
+}
+@media screen  and (max-width: 768px){
+    .container{
+        width:90%;
+        margin-top:100px;
+        grid-template-columns: 100%;
+        grid-template-rows: 105px 80px 80px 80px 80px;
+
+    }
+    
+    .mark p{
+        margin-top:17px;
+    }
+    .mark{
+        flex-shrink: 0;
+    }
+    .mark, .text, .question{
+        font-size:1em;
+    }
+    .options{
+        grid-column: 1/span 2;
+    }
+    .end{
+        width:300px;
+        height:30px;
+    }
+    .heading{
+        font-size:1.5em;
+    }
+    .sub-heading{
+        font-size: 1em;
+    }
+    #share{
+        height:80px;
+        width:80px;
+    }
 }

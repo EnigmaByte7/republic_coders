@@ -3,6 +3,9 @@
     margin:0;
     padding:0;
 }
+.body{
+    overflow-x: hidden;
+}
 .main{
     position:relative;
     top: 0;
@@ -47,4 +50,17 @@ video{
     letter-spacing: 1px;
     font-family: Protest Riot;
     text-align: justify;
+}
+@media screen  and (max-width: 768px){
+    .heading{
+        margin:10px;
+        font-size:4em;
+        text-align:center;
+    }
+    .content{
+        width:80%;
+    }
+    .text{
+        font-size:1em;
+    }
 }

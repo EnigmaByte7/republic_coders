@@ -59,13 +59,16 @@ const videos = document.querySelectorAll('.grid-video');
     const observer2 = new IntersectionObserver(onIntersection, { threshold: 0.8 });
     observer2.observe(rover);
 
+    setTimeout(function(){
+      document.getElementById('load').style.visibility = 'hidden';},
+      1000
+    );
+
     function onIntersection(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add a class to the "Thanks" element to trigger its animation
                 thanks.classList.add("show-thanks");
             } else {
-                // Remove the class when the rover is not intersecting
                 thanks.classList.remove("show-thanks");
             }
         });
