@@ -667,7 +667,6 @@
         observer.observe(video);
         });
 
-
         });
 
         document.addEventListener("DOMContentLoaded", function() {
@@ -688,6 +687,11 @@
             });
         }
         });
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function() {
+                document.getElementById('load').style.visibility = 'hidden';
+        },4000)
+    });
 </script>
 </body>
 
